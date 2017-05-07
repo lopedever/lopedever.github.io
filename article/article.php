@@ -3,8 +3,8 @@ include '../assets/include.php';
 $id = $_GET['id'];
 
 $title = $ini[$id]['title'];
-$file_m_date = date('Y-m-d', filemtime('a'.$id.'.html'));
-$file_m_datetime = date('c', filemtime('a'.$id.'.html'));
+$file_m_date = date('Y-m-d', filemtime('source/'.$id.'.html'));
+$file_m_datetime = date('c', filemtime('source/'.$id.'.html'));
 
 // $edit_date = date('Y-m-d', strtotime($ini[$id]['edit_datetime']));
 // $edit_datetime = date('c', strtotime($ini[$id]['edit_datetime']));
@@ -15,7 +15,7 @@ if ($ini[$id]['valid']) {
     <h1><?php echo $title; ?></h1>
     <p class="article-edit-time">编辑于：<time datetime="<?php echo $file_m_datetime; ?>"><?php echo $file_m_date; ?></time></p>
 <?php
-include 'a'.$id.'.html';
+include "source/$id.html";
 } else {
     $url = "/404.html";
     echo "<script>window.location.href='$url'</script>"; 
