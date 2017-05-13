@@ -4,12 +4,11 @@ footer {
   margin: 32px 0;
 }
 
-footer .icon > svg {
+footer a > svg {
   fill: #888;
   height: 16px;
-  margin: 0 4px 0 0;
-  vertical-align: middle;
   width: 16px;
+  margin: 0 4px 0 0;
 }
 
 footer .site-name {
