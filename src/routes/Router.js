@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Shortcuts from './Shortcuts';
 
 export default class Router extends React.Component {
   render() {
-    return <BrowserRouter>
+    return <HashRouter>
       <Switch>
         <Route path="/shortcuts" component={Shortcuts} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   }
 }

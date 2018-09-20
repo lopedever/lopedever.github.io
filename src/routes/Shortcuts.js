@@ -1,12 +1,23 @@
 import React from 'react';
 import 'primer-markdown/build/build.css';
 
+const meta = {
+  title: '12306 SMS to Cal',
+  version: 'v2.6'
+}
+
 export default class Shortcuts extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    document.title = meta.title;
+  }
+
   render() {
     return <div className="markdown-body">
-      <h1>12306 SMS to Cal</h1>
-      <blockquote>版本：v2.6</blockquote>
-      <h2>使用方法：</h2>
+      <h1>{meta.title}</h1>
+      <blockquote>版本：{meta.version}</blockquote>
+      <h2>使用方法</h2>
       <ol>
         <li>复制 12306 短信</li>
         <li>在通知中心或这里运行捷径</li>
