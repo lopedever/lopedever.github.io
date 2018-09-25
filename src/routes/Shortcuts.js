@@ -3,7 +3,7 @@ import 'primer-markdown/build/build.css';
 
 const meta = {
   title: '12306 SMS to Cal',
-  version: 'v2.6',
+  version: 'v3.0',
 }
 
 const A = ({ href, children }) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
@@ -16,30 +16,36 @@ export default class Shortcuts extends React.Component {
   }
 
   render() {
-    return <div className="markdown-body" style={{padding: 16}}>
+    return <div className="markdown-body" style={{ padding: 16 }}>
       <h1>{meta.title}</h1>
-      <blockquote>版本：{meta.version} <A href="https://www.icloud.com/shortcuts/a91b6cb2f5d5482c9776dbeb41ab12dc">GET</A></blockquote>
+      <blockquote>版本：{meta.version} <A href="https://www.icloud.com/shortcuts/b768dfdbe9a9433c8ec3ac4ea590bace">GET</A></blockquote>
 
       <h2>使用方法</h2>
       <ol>
-        <li>复制 12306 短信</li>
-        <li>在通知中心或这里运行捷径</li>
-        <li>输入目的车站</li>
-        <li>乘车信息将自动添加到系统日历</li>
+        <li>复制 12306 发来的短信；</li>
+        <li>在通知中心或捷径应用内运行；</li>
+        <li>根据提示操作；</li>
+        <li>乘车信息将自动添加到系统日历。</li>
       </ol>
 
       <h2>注意事项</h2>
       <ul>
         <li>使用本捷径需连接网络；</li>
-        <li>在新的接口做好之前，目的地请手动输入；</li>
+        <li>支持 12306 发送的【铁路客服】及 “中国铁路行程提醒服务” 开头的短信；</li>
         <li>支持在售火车票行程，其他时间一般不会成功。</li>
       </ul>
 
       <h2>隐私声明</h2>
-      <p>捷径会向本站，即 <A href="https://api.wangjian.io">api.wangjian.io</A> 上传短信中的<strong>日期</strong>、<strong>车次</strong>、<strong>出发站</strong>和手动输入的<strong>到达站</strong>，用来获取出发时间、到达时间和历时。</p>
+      <p>捷径会向本站：<A href="https://api.wangjian.io">api.wangjian.io</A> 上传短信中的<strong>日期</strong>、<strong>车次</strong>、<strong>出发站</strong>和<strong>到达站</strong>信息，用来获取出发时间、到达时间和历时。</p>
       <p>其他信息操作均在捷径 App 内完成，大家可放心使用。</p>
 
       <h2>更新日志</h2>
+
+      <h3>v3.0<small> - 20180926 <A href="https://www.icloud.com/shortcuts/b768dfdbe9a9433c8ec3ac4ea590bace">GET</A></small></h3>
+      <p>到达车站选择列表回归；</p>
+      <p>现在支持购票和行程提醒服务两种短信；其中行程提醒服务短信甚至不需要选择到达车站，真正一键添加；</p>
+      <p>接口查询速度优化，成功率更高，不需像以前那样等待很久了；</p>
+      <p>支持了更多出发站的短信，如香港西九龙。</p>
 
       <h3>v2.6<small> - 20180919 <A href="https://www.icloud.com/shortcuts/a91b6cb2f5d5482c9776dbeb41ab12dc">GET</A></small></h3>
       <p>对不复制短信运行和将短信粘贴到目的车站输入框的情况做了限制。</p>
@@ -54,7 +60,6 @@ export default class Shortcuts extends React.Component {
       <p>移除失效的第三方 API，暂时使用手动输入方式。</p>
 
       <blockquote>
-
 
         <h4>- - - - - 以下版本已失效 - - - - -</h4>
 
