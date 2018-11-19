@@ -3,7 +3,8 @@ import 'primer-markdown/build/build.css';
 
 const meta = {
   title: '12306 SMS to Cal',
-  version: 'v3.0',
+  version: 'v3.1',
+  url: 'https://www.icloud.com/shortcuts/a4626693baca46e786095ecfe4f001ab',
 }
 
 const A = ({ href, children }) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
@@ -18,9 +19,11 @@ export default class Shortcuts extends React.Component {
   render() {
     return <div className="markdown-body" style={{ padding: 16 }}>
       <h1>{meta.title}</h1>
-      <blockquote>版本：{meta.version} <A href="https://www.icloud.com/shortcuts/b768dfdbe9a9433c8ec3ac4ea590bace">GET</A></blockquote>
+      <blockquote>版本：{meta.version} <A href={meta.url}>GET</A></blockquote>
 
       <h2>使用方法</h2>
+
+      <h3>短信</h3>
       <ol>
         <li>复制 12306 发来的短信；</li>
         <li>在通知中心或捷径应用内运行；</li>
@@ -28,10 +31,20 @@ export default class Shortcuts extends React.Component {
         <li>乘车信息将自动添加到系统日历。</li>
       </ol>
 
+      <h3>邮件</h3>
+      <ol>
+        <li>打开 12306@rails.com.cn 发来的订票、改签邮件；</li>
+        <li>选中其中含有车次信息的文字（全选邮件也可以）；</li>
+        <li>点击弹出框最右侧的 “共享...” 按钮；</li>
+        <li>在分享菜单选择捷径 App；</li>
+        <li>选择 {meta.title} 运行；</li>
+        <li>因邮件中信息包含了到达站，所以日程将直接添加成功。</li>
+      </ol>
+
       <h2>注意事项</h2>
       <ul>
         <li>使用本捷径需连接网络；</li>
-        <li>支持 12306 发送的【铁路客服】及 “中国铁路行程提醒服务” 开头的短信；</li>
+        <li>支持 12306 发送的【铁路12306】、【铁路客服】及 “中国铁路行程提醒服务” 开头的短信；</li>
         <li>支持在售火车票行程，其他时间一般不会成功。</li>
       </ul>
 
@@ -40,6 +53,10 @@ export default class Shortcuts extends React.Component {
       <p>其他信息操作均在捷径 App 内完成，大家可放心使用。</p>
 
       <h2>更新日志</h2>
+
+      <h3>v3.1<small> - 20181119 <A href="https://www.icloud.com/shortcuts/a4626693baca46e786095ecfe4f001ab">GET</A></small></h3>
+      <p>新增支持【铁路12306】开头的短信；</p>
+      <p>现在支持从邮件添加日程：选择邮件中含有相关信息的文字（全选也可以），通过共享菜单调用捷径。</p>
 
       <h3>v3.0<small> - 20180926 <A href="https://www.icloud.com/shortcuts/b768dfdbe9a9433c8ec3ac4ea590bace">GET</A></small></h3>
       <p>到达车站选择列表回归；</p>
