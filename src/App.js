@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { HashRouter, Route, Switch } from "react-router-dom";
+import Shortcuts from './routes/Shortcuts';
 import './App.css';
 
-import Router from './routes/Router';
-
-export default class App extends Component {
-  render() {
-    return <Router />
-  }
+export default function App() {
+  return (
+    <HashRouter>
+      <Switch>
+        <Route path="/shortcuts" component={Shortcuts} />
+      </Switch>
+    </HashRouter>
+  );
 }
