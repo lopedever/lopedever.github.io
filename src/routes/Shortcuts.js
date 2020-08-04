@@ -3,11 +3,11 @@ import 'primer-markdown/build/build.css';
 
 const meta = {
   title: '12306 SMS to Cal',
-  version: 'v3.1',
-  url: 'https://www.icloud.com/shortcuts/a4626693baca46e786095ecfe4f001ab',
-}
+  version: 'v3.2',
+  url: 'https://www.icloud.com/shortcuts/2edc41bfe0784a84be23aab4dc747ed8',
+};
 
-const A = ({ href, children }) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+const A = ({ href, children }) => <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>;
 
 export default class Shortcuts extends React.Component {
   constructor(props) {
@@ -54,31 +54,34 @@ export default class Shortcuts extends React.Component {
 
       <h2>更新日志</h2>
 
-      <h3>v3.1<small> - 20181119 <A href="https://www.icloud.com/shortcuts/a4626693baca46e786095ecfe4f001ab">GET</A></small></h3>
-      <p>新增支持【铁路12306】开头的短信；</p>
-      <p>现在支持从邮件添加日程：选择邮件中含有相关信息的文字（全选也可以），通过共享菜单调用捷径。</p>
-
-      <h3>v3.0<small> - 20180926 <A href="https://www.icloud.com/shortcuts/b768dfdbe9a9433c8ec3ac4ea590bace">GET</A></small></h3>
-      <p>到达车站选择列表回归；</p>
-      <p>现在支持购票和行程提醒服务两种短信；其中行程提醒服务短信甚至不需要选择到达车站，真正一键添加；</p>
-      <p>接口查询速度优化，成功率更高，不需像以前那样等待很久了；</p>
-      <p>支持了更多出发站的短信，如香港西九龙。</p>
-
-      <h3>v2.6<small> - 20180919 <A href="https://www.icloud.com/shortcuts/a91b6cb2f5d5482c9776dbeb41ab12dc">GET</A></small></h3>
-      <p>对不复制短信运行和将短信粘贴到目的车站输入框的情况做了限制。</p>
-
-      <h3>v2.5<small> - 20180919 <A href="https://www.icloud.com/shortcuts/b9001e8898a34b5f86d0128eabf1602a">GET</A></small></h3>
-      <p>使用新版捷径(Shortcuts)制作，如遇到不兼容问题，请先更新 app；</p>
-      <p>增加大量提示，方便排错，提高成功率。</p>
-      <p>记得使用前先复制短信；</p>
-      <p>选择车站功能即将回归。</p>
-
-      <h3>v2.4<small> - 20180916 <A href="https://workflow.is/workflows/355dfce33b5f4876a709b1990e0e2661">GET</A></small></h3>
-      <p>移除失效的第三方 API，暂时使用手动输入方式。</p>
+      <h3>v3.2<small> - 20200804 <A href="https://www.icloud.com/shortcuts/2edc41bfe0784a84be23aab4dc747ed8">GET</A></small></h3>
+      <p>新增支持【12306】开头的短信；</p>
 
       <blockquote>
 
         <h4>- - - - - 以下版本已失效 - - - - -</h4>
+
+        <h3>v3.1<small> - 20181119 <A href="https://www.icloud.com/shortcuts/a4626693baca46e786095ecfe4f001ab">GET</A></small></h3>
+        <p>新增支持【铁路12306】开头的短信；</p>
+        <p>现在支持从邮件添加日程：选择邮件中含有相关信息的文字（全选也可以），通过共享菜单调用捷径。</p>
+
+        <h3>v3.0<small> - 20180926 <A href="https://www.icloud.com/shortcuts/b768dfdbe9a9433c8ec3ac4ea590bace">GET</A></small></h3>
+        <p>到达车站选择列表回归；</p>
+        <p>现在支持购票和行程提醒服务两种短信；其中行程提醒服务短信甚至不需要选择到达车站，真正一键添加；</p>
+        <p>接口查询速度优化，成功率更高，不需像以前那样等待很久了；</p>
+        <p>支持了更多出发站的短信，如香港西九龙。</p>
+
+        <h3>v2.6<small> - 20180919 <A href="https://www.icloud.com/shortcuts/a91b6cb2f5d5482c9776dbeb41ab12dc">GET</A></small></h3>
+        <p>对不复制短信运行和将短信粘贴到目的车站输入框的情况做了限制。</p>
+
+        <h3>v2.5<small> - 20180919 <A href="https://www.icloud.com/shortcuts/b9001e8898a34b5f86d0128eabf1602a">GET</A></small></h3>
+        <p>使用新版捷径(Shortcuts)制作，如遇到不兼容问题，请先更新 app；</p>
+        <p>增加大量提示，方便排错，提高成功率。</p>
+        <p>记得使用前先复制短信；</p>
+        <p>选择车站功能即将回归。</p>
+
+        <h3>v2.4<small> - 20180916 <A href="https://workflow.is/workflows/355dfce33b5f4876a709b1990e0e2661">GET</A></small></h3>
+        <p>移除失效的第三方 API，暂时使用手动输入方式。</p>
 
         <h3>v2.3<small> - 20171124 <A href="https://workflow.is/workflows/9854ff939a9442879d7430d773ebe3c0">GET</A></small></h3>
         <p>优化了正则表达式，可用性更高；</p>
@@ -120,6 +123,6 @@ export default class Shortcuts extends React.Component {
       <p>email: <a href="mailto:contact@wangjian.io">contact@wangjian.io</a></p>
       <p>twitter: <A href="https://twitter.com/lopedever">@lopedever</A></p>
 
-    </div>
+    </div>;
   }
 }
